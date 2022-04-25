@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "SamsungOne";
+    src: url(Fonts/BreezeSans-Regular_20150728.ttf);
+}
+
+@font-face {
+    font-family: "SamsungOne-LC";
+    src: url(Fonts/BreezeSans-LightCondensed_20150728.ttf);
+}
+
+@font-face {
+    font-family: "SamsungOne-MC";
+    src: url(Fonts/BreezeSans-MediumCondensed_20150728.ttf);
+}
+
+                        /* BODY */
+body{
+    background: white;
+}
+/* HEADER */
+header{
+    display: flex;
+    overflow: visible;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(22, 22, 22);
+    height: 160px;
+    width: 100%;
+    position:absolute;
+    z-index: 999;
+    }
+
+.logo{
+    margin-inline-start: 35px;
+    }
+
+                    /* "ENABLED" */
+header h1{
+    font-family: "SamsungOne-LC";
+    font-size: 42px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-inline-start: 12rem;
+    margin-block-start: 15px;
+    align-self: center;
+    position: absolute;
+    letter-spacing: 0.2em;
+}
+
+header h1 a{
+    color: #fff;
+}
+                    /* "SOUNDS" */
+header span{
+    color: rgb(255, 177, 177);
+}
+
+/* LISTAS */
+header ul li{
+    font-family: "SamsungOne-LC";
+    list-style: none;
+    display: inline-flex;
+}
+
+header ul li a{
+    font-size: 22px;
+    color:rgb(255, 177, 177);
+    margin-inline-end: 3.5rem;
+}
+
+/* IMAGEN PRINCIPAL */
+main {
+    margin-block-start: 160px;
+    min-height: calc(100vh - 175px - 150px);
+}
+.container img {
+    margin-block-start: 160px;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: 0 30%;
+}
+
+.text-block {
+    display: grid;
+    background-color: rgb(22, 22, 22);
+    opacity: .85;
+    position: absolute;
+    width: 400px;
+    padding: 40px;
+    border-radius: 5px;
+    color: rgb(255, 177, 177);
+    font-family: "SamsungOne-LC";
+    text-align: justify;
+    top: 270px;
+    left: 200px;    
+}
+
+.text-block h2{
+    font-size: 40px;
+    margin-bottom: 16px;
+    opacity: 1;
+}
+
+.text-block p{
+    font-size: 17px;
+    opacity: 1;
+}
+
+.titles{
+    margin-block-start: 35px;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    font-family: "SamsungOne";
+}
+
+.titles a{
+    color:rgb(22, 22, 22);
+    text-shadow: 1px 1px 2px rgb(255, 177, 177);
+}
+
+
+
+/* ----------- RELEASES ----------- */
+
+.releases-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5%;
+    justify-self: center;
+    align-items: space-between;
+    justify-content: space-between;
+    text-align: center;
+    width: fit-content;
+    margin: 25px;
+}
+
+
+/* No estoy pudiendo poner los nombres de cada canción a la misma altura ni centrarlos (los bloques que están abajo, .song-name) */
+
+.release1 {
+    align-content: space-between;
+    justify-content: space-between;
+    min-height: 860px;
+    border: 2px solid rgb(63, 69, 131);
+    border: 1px solid rgb(22, 22, 22);
+    background-color: white;
+    color: rgb(22, 22, 22);
+    font-family: "SamsungOne-LC";
+    transition: all 0.2s ease-in-out;
+}
+
+.release2 {
+    align-content: space-between;
+    justify-content: space-between;
+    min-height: 860px;
+    border: 2px solid rgb(63, 69, 131);
+    border: 1px solid rgb(22, 22, 22);
+    background-color: white;
+    color: rgb(22, 22, 22);
+    font-family: "SamsungOne-LC";
+    transition: all 0.2s ease-in-out;
+}
+
+.release3 {
+    align-content: space-between;
+    justify-content: space-between;
+    min-height: 860px;
+    border: 2px solid rgb(63, 69, 131);
+    border: 1px solid rgb(22, 22, 22);
+    background-color: white;
+    color: rgb(22, 22, 22);
+    font-family: "SamsungOne-LC";
+    transition: all 0.2s ease-in-out;
+}
+
+.relimg{
+    align-self: flex-start;
+    justify-self: center;
+    width: 90%;
+    min-width: 370px;
+    margin-block-start: 25px;
+    cursor: pointer;
+}
+
+.song-name{
+    display: inline-block;
+    width: 82%;
+    font-size: 30px;
+    background-color:rgb(255, 177, 177);
+    padding: 1.2rem;
+    color: rgb(22, 22, 22);
+    font-family: "SamsungOne-LC";
+    margin-block-end: 40px;
+    text-align: center;
+    justify-self: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    align-self: flex-end;
+}
+
+.interview{
+    font-size: 20px;
+    text-align: justify;
+    justify-self: center;
+    align-self: center;
+    margin-block-start: 25px;
+    margin-inline-start: 25px;
+    margin-inline-end: 25px;
+    margin-block-end: 70px;
+}
+
+/* ------ BLOCKS ------ */
+.blocks{
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid rgb(22, 22, 22);
+    background-color: rgb(22, 22, 22);
+    padding: 1rem;
+    font-size: 20px;
+    margin-block-start: 25px;
+    margin-block-end: 30px;
+    font-family: "SamsungOne";
+    text-transform: uppercase;
+}
+
+.blocks a{
+    color: rgb(255, 177, 177);
+}
+
+.artists p{
+    display: block;
+    width: 790px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-block-start: 25px;
+    margin-block-end: 30px;
+    font-family: "SamsungOne-LC";
+    font-size: 22px;
+    text-align: justify;
+}
+.artists p a{
+    font-family: "SamsungOne-LC";
+    font-size: 22px;
+    color: black;
+}
+
+.artists-animbox{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-block-end: 30px;
+}
+.artists-menu{
+    position: absolute;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    bottom: 0;
+}
+.artists-menu label{
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+}
+.artists-menu  label:hover,
+.artists-menu  label:focus {
+  background: #1c87c9;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: left 0s 0.75s;
+}
+  [id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
+.slide-1 {
+      background-image: url(/Multimedia/img/artists/artist1.jpg);
+  }
+  .slide-2 {
+    background-image: url(/Multimedia/img/artists/artist2.jpg);
+}
+.slide-3 {
+    background-image: url(/Multimedia/img/artists/artist3.jpg);
+}
+/* No consigo que se vean completas las imágenes de las personas*/
+
+.merchandise{
+    margin-block-start: 40px;
+}
+
+.merchandise .titles{
+    font-size: 30px;
+}
+
+.merch-p{
+    margin-block-start: 20px;
+    font-size: 22px;
+    font-family: "SamsungOne-LC";
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+.merch-p-link{
+    text-align: center;
+    margin-block-start: 30px;
+
+    font-size: 22px;
+    font-family: "SamsungOne-LC";
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+.merch-p-link a{
+    color: rgb(22, 22, 22);
+    font-family: "SamsungOne";
+}
+
+.store-box{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: fit-content;
+    min-width: fit-content;
+    height: 680px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    overflow: hidden;
+    transform: translate(-50% -50%);
+    background-size: 100% 100%;
+    min-width: 1000px;
+    animation: slider 60s 10s infinite forwards;
+    margin-block-start: 30px;
+    margin-block-end: 30px;
+}
+
+@keyframes slider{
+    0%{background-image: url(/Multimedia/img/store/store-item1.jpg); background-size: 100% 100%;}
+    15%{background-image: url(/Multimedia/img/store/store-item2.jpg); background-size: 100% 100%;}
+    30%{background-image: url(/Multimedia/img/store/store-item3.jpg); background-size: 100% 100%;}
+    45%{background-image: url(/Multimedia/img/store/store-item4.jpg); background-size: 100% 100%;}
+    60%{background-image: url(/Multimedia/img/store/store-item5.jpg); background-size: 100% 100%;}
+    85%{background-image: url(/Multimedia/img/store/store-item6.jpg); background-size: 100% 100%;}
+}
+
+footer{
+    color: rgb(22, 22, 22);
+    background-color: rgb(255, 177, 177);
+    padding: 30px;
+}
+
+.footer-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer ul{
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer ul li{
+    padding: 0 1.5rem;
+    margin-block-end: 20px;
+}
+
+footer div ul li a{
+    margin-block-start: 5px;
+    font-size: 20px;
+    color: rgb(22, 22, 22);
+    font-family: "SamsungOne";
+}
+
+footer ul li i{
+    cursor: pointer;
+    font-size: 35px;
+}
+
+footer p{
+    margin-block-start: 5px;
+    font-size: 18px;
+    font-family: "SamsungOne";
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    background-image: linear-gradient (currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.hvr:hover, .hvr:focus {
+    background-size: 100% 2px;
+}
+
+.hvr::before,
+.hvr::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.hvr::before {
+  background-color: rgb(255, 177, 177);
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.hvr::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: rgb(22, 22, 22);
+}
+
+.hvr:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+.hvr:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+/* cut */
+.hvr2:hover, .hvr2:focus {
+    background-size: 100% 2px;
+}
+
+.hvr2::before,
+.hvr2::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.hvr2::before {
+  background-color: rgb(22, 22, 22);
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.hvr2::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: rgb(22, 22, 22);
+}
+
+.hvr2:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+.hvr2:hover::after {
+  transform: translate3d(0, 0, 0);
+}
