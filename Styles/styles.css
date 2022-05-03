@@ -114,16 +114,23 @@ main {
 }
 
 .titles{
-    margin-block-start: 35px;
+    margin-block-start: 40px;
+    padding: 30px;
     display: block;
     text-align: center;
     font-size: 50px;
     font-family: "SamsungOne";
+    background-color: rgb(22, 22, 22);
+}
+
+.artists .titles{
+    font-size: 30px;
+    background-color: rgb(22, 22, 22);
+    padding: 40px;
 }
 
 .titles a{
-    color:rgb(22, 22, 22);
-    text-shadow: 1px 1px 2px rgb(255, 177, 177);
+    color:rgb(255, 148, 148);
 }
 
 
@@ -133,66 +140,74 @@ main {
 .releases-boxes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5%;
+    column-gap: 2.5rem;
     justify-self: center;
     align-items: space-between;
     justify-content: space-between;
     text-align: center;
     width: fit-content;
-    margin: 25px;
+    margin: 40px;
 }
 
 
 /* No estoy pudiendo poner los nombres de cada canción a la misma altura ni centrarlos (los bloques que están abajo, .song-name) */
 
 .release1 {
-    align-content: space-between;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     min-height: 860px;
     border: 2px solid rgb(63, 69, 131);
     border: 1px solid rgb(22, 22, 22);
-    background-color: white;
     color: rgb(22, 22, 22);
     font-family: "SamsungOne-LC";
     transition: all 0.2s ease-in-out;
 }
 
 .release2 {
-    align-content: space-between;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     min-height: 860px;
     border: 2px solid rgb(63, 69, 131);
     border: 1px solid rgb(22, 22, 22);
-    background-color: white;
     color: rgb(22, 22, 22);
     font-family: "SamsungOne-LC";
     transition: all 0.2s ease-in-out;
 }
 
 .release3 {
-    align-content: space-between;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     min-height: 860px;
     border: 2px solid rgb(63, 69, 131);
     border: 1px solid rgb(22, 22, 22);
-    background-color: white;
     color: rgb(22, 22, 22);
     font-family: "SamsungOne-LC";
     transition: all 0.2s ease-in-out;
 }
 
 .relimg{
-    align-self: flex-start;
-    justify-self: center;
+    align-self: center;
     width: 90%;
     min-width: 370px;
     margin-block-start: 25px;
     cursor: pointer;
 }
 
-.song-name{
-    display: inline-block;
-    width: 82%;
+.track-about{
+    font-size: 20px;
+    text-align: justify;
+    justify-self: start;
+    align-self: center;
+    margin-block-start: 25px;
+    width: 90%;
+    margin-block-end: 70px;
+}
+
+.track-name{
+    width: 90%;
     font-size: 30px;
     background-color:rgb(255, 177, 177);
     padding: 1.2rem;
@@ -200,116 +215,117 @@ main {
     font-family: "SamsungOne-LC";
     margin-block-end: 40px;
     text-align: center;
-    justify-self: center;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    align-self: flex-end;
+    align-self: center;
+    justify-self: end;
 }
 
-.interview{
-    font-size: 20px;
-    text-align: justify;
-    justify-self: center;
-    align-self: center;
-    margin-block-start: 25px;
-    margin-inline-start: 25px;
-    margin-inline-end: 25px;
-    margin-block-end: 70px;
-}
 
 /* ------ BLOCKS ------ */
 .blocks{
-    display: block;
     width: fit-content;
+    margin-block-start: 40px;
+    margin-block-end: 40px;
+    text-align: center;
+    margin-block-start: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "SamsungOne";
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    border: 1px solid rgb(22, 22, 22);
-    background-color: rgb(22, 22, 22);
-    padding: 1rem;
-    font-size: 20px;
-    margin-block-start: 25px;
-    margin-block-end: 30px;
-    font-family: "SamsungOne";
-    text-transform: uppercase;
 }
 
 .blocks a{
-    color: rgb(255, 177, 177);
+    color: rgb(22, 22, 22);
 }
 
 .artists p{
     display: block;
-    width: 790px;
+    padding: 1.2rem;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-block-start: 25px;
-    margin-block-end: 30px;
     font-family: "SamsungOne-LC";
-    font-size: 22px;
+    font-size: 20px;
     text-align: justify;
+    color: rgb(255, 177, 177);
+    border: 2px solid rgb(255, 148, 148);
 }
 .artists p a{
     font-family: "SamsungOne-LC";
-    font-size: 22px;
-    color: black;
+    font-size: 20px;
+    color: rgb(255, 177, 177);
 }
 
-.artists-animbox{
-    height: 500px;
-    width: 500px;
-    position: relative;
+.slidershow{
+    width: 400px;
+    height: 400px;
     overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    margin-block-end: 30px;
+}
+.middle{
+    position: relative;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-block-start: 40px;
+    margin-block-end: 40px;
+}
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.artists-bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.artists-bar:hover{
+    background: #fff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
 }
 .artists-menu{
-    position: absolute;
-    left: 0;
-    z-index: 900;
-    width: 100%;
-    bottom: 0;
+    width: 500%;
+    height: 100%;
+    display: flex;
 }
-.artists-menu label{
-    cursor: pointer;
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background: #fff;
-    border-radius: 50px;
-    margin: 0 0.2em 1em;
+.artist{
+    width: 20%;
+    transition: 0.6s;
 }
-.artists-menu  label:hover,
-.artists-menu  label:focus {
-  background: #1c87c9;
-}
-.slide {
+.artist img{
     width: 100%;
     height: 100%;
-    position: relative;
-    top: 0;
-    left: 100%;
-    z-index: 10;
-    padding: 8em 1em 0;
-    background-size: cover;
-    background-position: 50% 50%;
-    transition: left 0s 0.75s;
 }
-  [id^="slide"]:checked + .slide {
-    left: 0;
-    z-index: 100;
-    transition: left 0.65s ease-out;
+
+#r1:checked ~ .a1{
+    margin-left: 0;
 }
-.slide-1 {
-      background-image: url(/Multimedia/img/artists/artist1.jpg);
-  }
-  .slide-2 {
-    background-image: url(/Multimedia/img/artists/artist2.jpg);
+#r2:checked ~ .a1{
+    margin-left: -20%;
 }
-.slide-3 {
-    background-image: url(/Multimedia/img/artists/artist3.jpg);
+#r1:checked ~ .a1{
+    margin-left: -40%;
 }
+#r1:checked ~ .a1{
+    margin-left: -60%;
+}
+#r1:checked ~ .a1{
+    margin-left: -80%;
+}
+
+
+
 /* No consigo que se vean completas las imágenes de las personas*/
 
 .merchandise{
@@ -318,23 +334,34 @@ main {
 
 .merchandise .titles{
     font-size: 30px;
+    background-color: rgb(22, 22, 22);
+    padding: 40px;
+    color: rgb(255, 177, 177);
 }
 
 .merch-p{
-    margin-block-start: 20px;
-    font-size: 22px;
-    font-family: "SamsungOne-LC";
-    text-align: justify;
+    display: block;
+    padding: 1.2rem;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    margin-block-start: 25px;
+    font-family: "SamsungOne-LC";
+    font-size: 20px;
+    text-align: justify;
+    color: rgb(255, 177, 177);
+    border: 2px solid rgb(255, 148, 148);
+}
+
+.merch-p a{
+    color: rgb(255, 177, 177);
 }
 
 .merch-p-link{
     text-align: center;
-    margin-block-start: 30px;
-
-    font-size: 22px;
+    margin-block-start: 40px;
+    text-transform: uppercase;
+    font-size: 20px;
     font-family: "SamsungOne-LC";
     margin-left: auto;
     margin-right: auto;
@@ -363,8 +390,8 @@ main {
     background-size: 100% 100%;
     min-width: 1000px;
     animation: slider 60s 10s infinite forwards;
-    margin-block-start: 30px;
-    margin-block-end: 30px;
+    margin-block-start: 40px;
+    margin-block-end: 40px;
 }
 
 @keyframes slider{
@@ -402,7 +429,6 @@ footer ul li{
 }
 
 footer div ul li a{
-    margin-block-start: 5px;
     font-size: 20px;
     color: rgb(22, 22, 22);
     font-family: "SamsungOne";
@@ -414,7 +440,6 @@ footer ul li i{
 }
 
 footer p{
-    margin-block-start: 5px;
     font-size: 18px;
     font-family: "SamsungOne";
     display: flex;
@@ -430,7 +455,6 @@ a {
     transition: background-size .3s;
     overflow: hidden;
     position: relative;
-    display: inline-block;
 }
 
 .hvr:hover, .hvr:focus {

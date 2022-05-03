@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/styles.css">
-    <link rel="icon" href="multimedia/img/logo90-2.png">
+    <link rel="icon" href="multimedia/img/logo91.png">
     <title>Enabled Sounds</title>
 </head>
 
 <body>
 <header>
-    <a href="index.html"><img class="logo" src="multimedia/img/logo90-2.png" width="120px" height="120px"></a>
-        <h1><a href="index.html">ENABLED <span>SOUNDS</span></a></h1>
+    <a href="index.html"><img class="logo" src="multimedia/img/logo91.png" width="220px" height="220px"></a>
+        <!-- <h1><a href="index.html">ENABLED <span>SOUNDS</span></a></h1> -->
         <nav class="main-nav">
         <ul>
         <li><a class="hvr" href="index.html">Home</a></li>
@@ -39,22 +39,24 @@
     
     <div class="release1">
         <img class="relimg" src="Multimedia/img/releases/the-trip-bruno-andrada.jpg" alt="still corners the trip">
-        <p class="interview">"This is my last track : "Still Corners - The Trip - Bruno Andrada Unofficial Remix" - Full support by Hernan Cattaneo, Resident 411 23-03-2019"</p>
-        <p class="song-name">The Trip<br>(Bruno Andrada's Remix)<br>by Still Corners</p>
+        <p class="track-about">"This is my last track : "Still Corners - The Trip - Bruno Andrada Unofficial Remix" - Full support by Hernan Cattaneo, Resident 411 23-03-2019"</p>
+        <p class="track-name">The Trip<br>(Bruno Andrada's Remix)<br>by Still Corners</p>
     </div>
 
     <div class="release2">
         <img class="relimg" src="Multimedia/img/releases/out-of-alignment.jpeg" alt="out of alignment">
-        <p class="interview">"This was my first release, it took me ten hard months to make it sound the way I wanted it to. What I like the most from it is the contrast that I was able to achieve from the distortion of the pads and then the bass input and low end levels. It feels like things are getting in order, hence the name."<p class="song-name">Out of Alignment<br>(Extended Mix)<br>by Eros David</p></p>
+        <p class="track-about">"This was my first release, it took me ten hard months to make it sound the way I wanted it to. What I like the most from it is the contrast that I was able to achieve from the distortion of the pads and then the bass input and low end levels. It feels like things are getting in order, hence the name."</p>
+        <p class="track-name">Out of Alignment<br>(Extended Mix)<br>by Eros David</p>
     </div>
 
     <div class="release3">
         <img class="relimg" src="Multimedia/img/releases/a-vision-eros-david.jpg" alt="medusa mosaic">
-        <p class="interview">"This piece was inspired in part by some quotes from the Gladiator movie. You will listen some deep rustic sounds that can be interpreted as a journey through the old ruins of the Roman Empire."<p class="song-name">A Vision<br>(Original Mix)<br>by Eros David</p></p>
+        <p class="track-about">"This piece was inspired in part by some quotes from the Gladiator movie. You will listen some deep rustic sounds that can be interpreted as a journey through the old ruins of the Roman Empire."</p>
+        <p class="track-name">A Vision<br>(Original Mix)<br>by Eros David</p>
     </div>
 </section>
 
-<div class="blocks"><a class="hvr" href="Pages/releases.html">Click for more music!</a></div>
+<div class="blocks"><a class="hvr2" href="Pages/releases.html">more music</a></div>
 
 <hr>
 
@@ -62,22 +64,42 @@
 <!-- Artists Section -->
 
 <section class="artists">
-<div><h2 class="titles"> <a class="hvr2" href="Pages/contact.html">Artists</a></h2>
-    <p>Meet our experts, those who exceeded our expectations to make their music and themselves to be known, reaffirming their undeniable talent. Stay tuned and make sure to follow each one of them on social media to keep up with their <a class="hvr2" href="Pages/releases.html">creations</a>.</p>
+    <div class="titles"><h2> <a href="Pages/contact.html">Artists</a></h2>
+    <p>Meet our experts, those who exceeded our expectations to make their productions and themselves to be known, reaffirming their undeniable talent. Stay tuned and make sure to follow each one of them on social media to keep up with their <a class="hvr" href="Pages/releases.html">creations</a>.</p>
 </div>
 
-<div class="artists-animbox">
+<div class="slidershow middle">
     <div class="artists-menu">
-        <label for="slide-dot-1"></label>
-        <label for="slide-dot-2"></label>
-        <label for="slide-dot-3"></label>
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+        <input type="radio" name="r" id="r5">
+        <div class="artist a1">
+            <img src="Multimedia/img/artists/artist1.jpg" alt="">
         </div>
-        <input id="slide-dot-1" type="radio" name="slides" checked>
-        <div class="slide slide-1"></div>
-        <input id="slide-dot-2" type="radio" name="slides">
-        <div class="slide slide-2"></div>
-        <input id="slide-dot-3" type="radio" name="slides">
-        <div class="slide slide-3"></div>
+        <div class="artist">
+            <img src="Multimedia/img/artists/artist2.jpg" alt="">
+        </div>
+        <div class="artist">
+            <img src="Multimedia/img/artists/artist3.jpg" alt="">
+        </div>
+        <div class="artist">
+            <img src="Multimedia/img/artists/artist4.jpg" alt="">
+        </div>
+        <div class="artist">
+            <img src="Multimedia/img/artists/artist5.jpg" alt="">
+        </div>
+
+        <div class="navigation">
+            <label for="r1" class="artists-bar"></label>
+            <label for="r2" class="artists-bar"></label>
+            <label for="r3" class="artists-bar"></label>
+            <label for="r4" class="artists-bar"></label>
+            <label for="r5" class="artists-bar"></label>
+            <label for="r6" class="artists-bar"></label>
+        </div>
+
     </div>
         <!-- <div class="artists-images">
             <div class="aas-image-container">
@@ -108,10 +130,10 @@
 <!-- Merchandise Section -->
 
 <section class="merchandise">
-    <div class="titles"><h2> <a class="hvr2" href="Pages/online_store.html">Online Store</a></h2>
-    <p class="merch-p">Check out the next thing you'll wear. At daytime, nightime, summer, winter, you got it. Stay tuned for any giveway we run. There is one for each <a class="hvr2" href="newseason.html">new season!</a></p>
+    <div class="titles"><h2> <a href="Pages/online_store.html">Online Store</a></h2>
+    <p class="merch-p">Check out the next thing you'll wear. At daytime, nightime, summer, winter, you got it. Stay tuned for any giveway we run. There is one for each <a class="hvr" href="newseason.html">new season!</a></p>
     </div>
-    <p class="merch-p-link"><a href="Pages/register.html">Suscribe For More</a></p>
+    <p class="merch-p-link"><a class="hvr2"  href="Pages/register.html">Suscribe For More</a></p>
 <div class="store-box">
     <!-- <div class="slider-images2">
         <div class="merch-image-container1">
