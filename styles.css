@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.color0{
+    background-color: rgb(17, 17, 17);
+    color: rgb(235, 190, 176);
+}
+.color1{
+    border-color: rgb(235, 190, 176);
+}
+.color2{
+    color: rgb(252, 197, 181);
+}
+.color3{
+    opacity: .8;
+    border-radius: 10px;
+}
+
+@font-face {
+    font-family: "samsung-font";
+    src: url(fonts/BreezeSans-LightCondensed_20150728.ttf);
+}
+
+.samsung-font{
+    font-family: "samsung-font";
+}
+
+.header-title-size{
+    font-size: 44px;
+}
+
+.titles{
+    font-size: 40px;
+}
+
+.nav-link-size{
+    font-size: 20px;
+}
+
+.thumb-post img {
+object-fit: none; /* Do not scale the image */
+object-position: center; /* Center the image within the element */
+width: 100%;
+max-height: 250px;
+margin-bottom: 1rem;
+}
+.rel-img{
+object-fit: cover;
+width: 90%;
+justify-self: center;
+}
+.store-img{
+object-fit: cover;
+width: 80%;
+justify-self: center;
+}
+.artist{
+object-fit: cover;
+width: 90%;
+justify-self: center;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column{
+    flex: 33%;
+    max-width: 33%;
+    padding: 10px 10px;
+}
+
+.column img{
+    margin-top: 0px;
+    vertical-align: middle;
+    width: 70%;
+}
+
+@media screen and (max-width: 800px) {
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media  and (max-width: 600px) {
+    .column{
+        flex: 100%;
+        max-width: 100%
+    }
+}
+
+.overlay-text{
+    width: 25%;
+    padding: 20px;
+    text-align: justify;
+    font-family: "samsung-font";
+}
+
+.overlay-text h2{
+    color: rgb(252, 197, 181);
+}
+.overlay-text p{
+    color: rgb(252, 197, 181);
+    text-align: justify;
+}
