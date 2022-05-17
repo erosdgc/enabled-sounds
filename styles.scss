@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "samsung-font";
+}
+
+@font-face {
+    font-family: "samsung-font";
+    src: url(Fonts/BreezeSans-Regular_20150728.ttf);
+}
+
+@font-face {
+    font-family: "samsung-font-mc";
+    src: url(Fonts/BreezeSans-MediumCondensed_20150728.ttf);
+}
+
+@font-face {
+    font-family: "samsung-font-lc";
+    src: url(fonts/BreezeSans-LightCondensed_20150728.ttf);
+}
+
+.color0{
+    background-color: rgb(17, 17, 17);
+    color: rgb(179, 176, 158);
+}
+.color1{
+    border-color: rgb(179, 176, 158);
+}
+.color2{
+    color: rgb(179, 176, 158);
+}
+.color3{
+    opacity: .8;
+    border-radius: 10px;
+}
+
+
+.samsung-font{
+    font-family: "samsung-font";
+}
+
+header{
+    height: 200px;
+    div h1 a{
+        font-family: "samsung-font";
+        font-size: 38px !important;
+        text-transform: capitalize;
+        color: #fff;
+    }
+    div h2{
+        font-size: 24px;
+        color: rgb(167, 163, 132);
+    }
+    img {
+        background-color: rgb(167, 163, 132);
+        border-radius: 5px;
+        margin-inline-start: 1.2rem;
+        padding: 5px;
+    }
+    ul li a{
+        font-size: 24px !important;
+        font-family: "samsung-font-lc";
+        color:rgb(179, 176, 158) !important;
+        margin-inline-end: 3rem;
+    }
+    ul li{
+        font-family: "samsung-font-lc";
+        list-style: none;
+    }
+}
+
+.header-title-size{
+    font-size: 44px;
+}
+
+.article1{
+    background-color: rgb(22, 22, 22);
+    h2 {
+        font-size: 4vw;
+        padding: 25px;
+        text-align: center;
+        font-family: "samsung-font";
+        color: rgb(179, 176, 158);
+        }
+}
+
+
+
+.container{
+
+    .article2 {
+        display: flex;
+    }
+}
+
+.article2 h2{
+    margin-block-start: 12px;
+    font-size: 22px;
+}
+
+// .titles{
+//     padding: 25px;
+//     text-align: center;
+//     font-size: 4vw;
+//     font-family: "samsung-font";
+//     background-color: white;
+//     color: rgb(179, 176, 158);
+//     font-style: italic;
+// }
+
+.nav-link-size{
+    font-size: 20px;
+}
+
+
+.thumb-post img {
+object-fit: none; /* Do not scale the image */
+object-position: center; /* Center the image within the element */
+width: 100%;
+max-height: 250px;
+margin-bottom: 1rem;
+}
+
+
+.rel-img{
+object-fit: cover;
+width: 100%;
+justify-self: center;
+border-radius: 5px;
+box-shadow: 0 0 10px rgb(17, 17, 17);
+}
+
+
+.store-img{
+object-fit: cover;
+width: 80%;
+justify-self: center;
+}
+
+
+.article2 .artist img{
+object-fit: cover;
+width: 80%;
+justify-self: center;
+border-radius: 5px;
+box-shadow: 0 0 10px rgb(17, 17, 17);
+}
+
+.row{
+    flex-wrap: wrap;
+    padding: 0 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.column{
+    flex: 33%;
+    max-width: 33%;
+    padding: 15px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgb(179, 176, 158);
+    padding: 10px 15px;
+    .card-body {
+        flex: 1 1 auto;
+    }
+    .btn{
+        display: inline-block;
+        background-color: rgb(17, 17, 17);
+        color: rgb(252, 197, 181);
+        border: 1px solid rgb(17, 17, 17);
+        text-align: center;
+        width: 240px;
+        padding: 10px 10px;
+        margin-top: auto;
+    }
+}
+
+
+.card 
+
+.column img{
+    margin-top: 0px;
+    vertical-align: middle;
+    width: 75%;
+}
+
+@media screen and (max-width: 800px) {
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column{
+    flex: 100%;
+    max-width: 100%
+    }
+}
+
+
+
+.image{
+    position: relative;
+    .image__img{
+        display: block;
+        width: 100%;
+    }
+    .image__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-family: "samsung-font-lc";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px;
+    opacity: 0;
+    transition: opacity 0.25s;
+        .image__title{
+        font-size: 6vw;
+        }
+        .image__description{
+            margin-block-start: 0.25em;
+            width: 60vw;
+            text-align: justify;
+            text-indent: 10px;
+        }
+    }
+    .image__overlay:hover{
+        opacity: 1;
+    }
+    .image__overlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+    .image__overlay:hover > * {
+        transform: translateY(0);
+    }
+}
+
+
+/* If the screen size is 1200px wide or more, set the font-size to 80px */
+@media (min-width: 1200px) {
+    .image__description {
+      font-size: 1.5vw;
+    }
+  }
+
+  /* If the screen size is smaller than 1200px, set the font-size to 80px */
+  @media (max-width: 1199.98px) {
+    .image__description {
+      font-size: 1.8vw;
+    }
+  }
+
+
+
+footer {
+    display: flex;
+    color: rgb(22, 22, 22);
+    background-color: rgb(255, 177, 177);
+    flex-direction: column;
+    padding: 30px;
+    .f-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ul {
+            margin-block-start: 40px;
+            margin-block-end: 40px;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+        ul li {
+            font-size: 22px;
+            margin-block-end: 20px;
+            padding: 0 1.5rem;
+            margin-block-end: 20px;
+            font-family: "samsung-font";
+        }
+        ul li a {
+            color: rgb(22, 22, 22);
+            text-decoration: none;
+        }
+    }
+    .flex-row{
+        ul li{
+        padding: 0 20px;
+        margin-block-end: 20px;
+        list-style-type: none;
+        }
+    ul li i {
+        font-size: 22px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        }
+    }
+    .legals {
+        margin-block-start: 30px;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+footer 
+
+a {
+    text-decoration: none;
+    background-image: linear-gradient (currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+a:hover, a:focus {
+    background-size: 100% 2px;
+}
