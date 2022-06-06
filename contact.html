@@ -13,7 +13,7 @@
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
     <link rel="stylesheet" href="styles.css">
-    <title>STAR01 Recordings</title>
+    <title>STAR01 Recordings - Contact</title>
 </head>
 
 <body class="bg">
@@ -56,58 +56,37 @@
 </header>
 
 
-<!----------------------------------->
-<!-------- HOVER HERO + Text -------->
-<!----------------------------------->
+<!------------------------------------->
+<!-------------- Contact -------------->
+<!------------------------------------->
 
-<div class="hero container-fluid">
-    <div class="image__overlay flex">
-        <h1 class="image__title samsung-font-cr">Welcome</h1>
-        <h2 class="image__brand samsung-font-lc">You have arrived to STAR01.</h2>
-        <h2 id="about__us" class="about__us">
-            <a class="samsung-font" data-bs-toggle="collapse" href="#about__description" role="button" aria-expanded="false" aria-controls="about__description">About Us</a>
-        </h2>
-        <p class="container collapse samsung-font-lc" id="about__description">We are a label that focuses on finding a style that is mostly recognized as progressive house, but we also cover a wide variety of artists more linked to melodic techno and organic house, among other sub-genres.</p>
-    </div>
-</div>
+<div id="contact" class="contact bg-transparent bg-blur container flex">
+    <h1 class="samsung-font-cr text-center">Contact</h1>
+    <form action="action_page.php">
 
-<button class="position-fixed bottom-20 start-50 translate-middle-x" id="bottombtn"><a href="#article1"><i class="fa-solid fa-arrow-down"></i></a></button>
+        <label for="name">Name</label>
+        <input type="name" name="name" placeholder="Full name" required>
 
-<!----------------------------------->
-<!-------------- Beats -------------->
-<!----------------------------------->
+        <label for="email">E-mail</label>
+        <input type="email" name="email" placeholder="Your e-mail" required>
 
-<div id="article1" class="article1 bg-blur container-xxl flex">
-    <h1 class="samsung-font-cr text-center">Latests Releases</h1>
-    <div class="wrapper flex">
-        <div class="card flex">
-            <img class="rel-img match-to-row position-absolute top-0 start-0" src="assets/img/releases/wandering-souls.jpg" alt="">
-            <div class="card-info">
-                <h2 class="track-name samsung-font-cr">Wandering Souls</h2>
-                <h4 class="track-artist samsung-font-lc">Eros David</h4>
-                <p class="track-genre samsung-font-lc">Melodic House & Techno</p>
-            </div>
-        </div>
-        <div class="card flex">
-            <img class="rel-img match-to-row position-absolute top-0 start-0" src="assets/img/releases/pillars-of-creation.jpg" alt="">
-            <div class="card-info">
-                <h2 class="track-name samsung-font-cr">Pillars of Creation</h2>
-                <h4 class="track-artist samsung-font-lc">Eros David</h4>
-                <p class="track-genre samsung-font-lc">Melodic House & Techno</p>
-            </div>
-        </div>
-        <div class="card flex">
-            <img class="rel-img match-to-row position-absolute top-0 start-0" src="assets/img/releases/new-world.jpg" alt="">
-            <div class="card-info">
-                <h2 class="track-name samsung-font-cr">Visionaries</h2>
-                <h4 class="track-artist samsung-font-lc">Eros David</h4>
-                <p class="track-genre samsung-font-cr">Organic House / Downtempo</p>
-            </div>
-        </div>
-    </div>
-    <h3 class="text-center text-uppercase">
-        <a class="samsung-font" href="releases.html">more beats</a>
-    </h3>
+        <label for="phone_number">Phone</label>
+        <input type="phone_number" name="phone_number" placeholder="Phone Number" required>
+
+        <label for="matter">Matter</label>
+            <select id="matter" name="matter">
+                <option value="Services">Services</option>
+                <option value="Events">Demo</option>
+                <option value="Events">Events</option>
+                <option value="Other">Other</option>
+                </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="We'll read you.." style="height: 200px" maxlength="300" minlength="20" required></textarea>
+
+        <input type="submit" value="Submit">
+    
+      </form>
 </div>
 
 
@@ -120,7 +99,7 @@
     
     <div class="footer_navbar">
         <ul class="flex justify-content-center">
-        <li><a class="nav-item footer_link samsung-font-cr" href="#about__us">About</a></li>
+        <li><a class="nav-item footer_link samsung-font-cr" href="index.html">About</a></li>
         <li><a class="nav-item footer_link samsung-font-cr" href="register.html">Register</a></li>
         <li><a class="nav-item footer_link samsung-font-cr" href="contact.html">Contact Us</a></li>
         <li><a class="nav-item footer_link samsung-font-cr" href="">Data Policy</a></li>
